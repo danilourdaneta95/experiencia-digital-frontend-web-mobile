@@ -1,0 +1,195 @@
+{
+  "horarioSemana": [
+    {
+      "dia": "Lunes",
+      "clases": [
+        {
+          "materia_nombre": "DINÁMICA",
+          "materia_codigo": "ICIVF002",
+          "horario_inicio": "16:00",
+          "horario_fin": "17:20",
+          "posicion_inicio_min": 480,
+          "duracion": 80,
+          "color": "color1"
+        },
+        {
+          "materia_nombre": "MECÁNICA DE SÓLIDOS",
+          "materia_codigo": "ICIVF003",
+          "horario_inicio": "17:30",
+          "horario_fin": "18:50",
+          "posicion_inicio_min": 570,
+          "duracion": 80,
+          "color": "color2"
+        }
+      ]
+    },
+    {
+      "dia": "Martes",
+      "clases": [
+        {
+          "materia_nombre": "ECONOMÍA FINANCIERA",
+          "materia_codigo": "INGE1430",
+          "horario_inicio": "09:30",
+          "horario_fin": "10:50",
+          "posicion_inicio_min": 90,
+          "duracion": 80,
+          "color": "color1"
+        },
+        {
+          "materia_nombre": "ECONOMÍA FINANCIERA",
+          "materia_codigo": "INGE1430",
+          "horario_inicio": "11:00",
+          "horario_fin": "12:20",
+          "posicion_inicio_min": 180,
+          "duracion": 80,
+          "color": "color1"
+        },
+        {
+          "materia_nombre": "ANÁLISIS DE ESTRUCTURAS",
+          "materia_codigo": "ICIVF001",
+          "horario_inicio": "14:31",
+          "horario_fin": "15:50",
+          "posicion_inicio_min": 391,
+          "duracion": 79,
+          "color": "color2"
+        },
+        {
+          "materia_nombre": "DINÁMICA",
+          "materia_codigo": "ICIVF002",
+          "horario_inicio": "16:00",
+          "horario_fin": "17:20",
+          "posicion_inicio_min": 480,
+          "duracion": 80,
+          "color": "color1"
+        },
+        {
+          "materia_nombre": "DINÁMICA",
+          "materia_codigo": "ICIVF002",
+          "horario_inicio": "17:30",
+          "horario_fin": "18:50",
+          "posicion_inicio_min": 570,
+          "duracion": 80,
+          "color": "color1"
+        }
+      ]
+    },
+    {
+      "dia": "Miércoles",
+      "clases": [
+        {
+          "materia_nombre": "INGLÉS TÉCNICO",
+          "materia_codigo": "INGE1431",
+          "horario_inicio": "11:00",
+          "horario_fin": "12:20",
+          "posicion_inicio_min": 180,
+          "duracion": 80,
+          "color": "color5"
+        },
+        {
+          "materia_nombre": "ANÁLISIS DE ESTRUCTURAS",
+          "materia_codigo": "ICIVF001",
+          "horario_inicio": "12:30",
+          "horario_fin": "13:50",
+          "posicion_inicio_min": 270,
+          "duracion": 80,
+          "color": "color2"
+        },
+        {
+          "materia_nombre": "ANÁLISIS DE ESTRUCTURAS",
+          "materia_codigo": "ICIVF001",
+          "horario_inicio": "14:31",
+          "horario_fin": "15:50",
+          "posicion_inicio_min": 391,
+          "duracion": 79,
+          "color": "color2"
+        },
+        {
+          "materia_nombre": "MODELACIÓN INTEGRADA Y ASISTIDA POR COMPUTADOR",
+          "materia_codigo": "ICIVA001",
+          "horario_inicio": "17:30",
+          "horario_fin": "18:50",
+          "posicion_inicio_min": 570,
+          "duracion": 80,
+          "color": "color4"
+        }
+      ]
+    },
+    {
+      "dia": "Jueves",
+      "clases": [
+        {
+          "materia_nombre": "ECONOMÍA FINANCIERA",
+          "materia_codigo": "INGE1430",
+          "horario_inicio": "09:30",
+          "horario_fin": "10:50",
+          "posicion_inicio_min": 90,
+          "duracion": 80,
+          "color": "color1"
+        },
+        {
+          "materia_nombre": "ECONOMÍA FINANCIERA",
+          "materia_codigo": "INGE1430",
+          "horario_inicio": "14:31",
+          "horario_fin": "15:50",
+          "posicion_inicio_min": 391,
+          "duracion": 79,
+          "color": "color1"
+        },
+        {
+          "materia_nombre": "MODELACIÓN INTEGRADA Y ASISTIDA POR COMPUTADOR",
+          "materia_codigo": "ICIVA001",
+          "horario_inicio": "16:00",
+          "horario_fin": "17:20",
+          "posicion_inicio_min": 480,
+          "duracion": 80,
+          "color": "color4"
+        },
+        {
+          "materia_nombre": "MODELACIÓN INTEGRADA Y ASISTIDA POR COMPUTADOR",
+          "materia_codigo": "ICIVA001",
+          "horario_inicio": "17:30",
+          "horario_fin": "18:50",
+          "posicion_inicio_min": 570,
+          "duracion": 80,
+          "color": "color4"
+        }
+      ]
+    },
+    {
+      "dia": "Viernes",
+      "clases": [
+        {
+          "materia_nombre": "INGLÉS TÉCNICO",
+          "materia_codigo": "INGE1431",
+          "horario_inicio": "11:00",
+          "horario_fin": "12:20",
+          "posicion_inicio_min": 180,
+          "duracion": 80,
+          "color": "color5"
+        },
+        {
+          "materia_nombre": "MECÁNICA DE SÓLIDOS",
+          "materia_codigo": "ICIVF003",
+          "horario_inicio": "16:00",
+          "horario_fin": "17:20",
+          "posicion_inicio_min": 480,
+          "duracion": 80,
+          "color": "color2"
+        },
+        {
+          "materia_nombre": "MECÁNICA DE SÓLIDOS",
+          "materia_codigo": "ICIVF003",
+          "horario_inicio": "17:30",
+          "horario_fin": "18:50",
+          "posicion_inicio_min": 570,
+          "duracion": 80,
+          "color": "color3"
+        }
+      ]
+    },
+    {
+      "dia": "Sabado",
+      "clases": []
+    }
+  ]
+}

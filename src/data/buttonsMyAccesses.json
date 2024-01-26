@@ -1,0 +1,26 @@
+{
+  "EgresadosMisAccesos": [
+    {
+      "id": 1,
+      "variant": "label",
+      "labelContent": "Ver mi ficha académica",
+      "target": "_self",
+      "linkTo": "/calificaciones",
+      "disabled": false
+    },
+    {
+      "id": 2,
+      "variant": "label",
+      "labelContent": "Certificados",
+      "target": "_blank",
+      "linkTo": "http://autoservicio.uss.cl/PROD/twbkwbis.P_GenMenu?name=homepage"
+    },
+    {
+      "id": 3,
+      "variant": "label",
+      "labelContent": "Biblioteca",
+      "target": "_blank",
+      "linkTo": "https://biblioteca.uss.cl/"
+    }
+  ]
+}

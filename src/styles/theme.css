@@ -1,0 +1,370 @@
+:root {
+  /* USS UI KIT */
+  /* Background */
+  --background: #ffffff;
+  --background-2: #f6f7f7;
+  --background-body: #f5f7f9;
+  --background-card-class: #e1eef8;
+  --background-disabled: #f6f7f7;
+  /* Colors */
+  --gray-75: #f5f7f9;
+  --gray-100: #f2f4f7;
+  --gray-200: #eaecf0;
+  --gray-300: #D0D5DD;
+  --light-grayish: #f8f9fc;
+  --gray-500: #667085;
+  --gray-600: #475467;
+  --light-grayish: #d2dee9;
+  --light-gray-white: #eaeff5;
+  --indigo-700: #3538cd;
+  --box-shadow-color: #8888881c;
+  --dark-blue: #00628d;
+  --very-dark-blue: #101828;
+  --dark-cyan: #5aa5a5;
+  --very-dark-desaturated-blue: #283341;
+  --lime-green: #12b76a;
+  /* Focus color All Components */
+  --focus: #001eb8;
+  --sizeFocus: 2px;
+  --active: #f4f5fd;
+  --red: #d04f39;
+  --white: #ffffff;
+  --lightBlue: #e4e8fc;
+  /* Disabled color */
+  --background-color-disabled: var(--background-disabled);
+  --color-font-disabled: #d0d5dd;
+  /*Tooltip*/
+  --tooltip-color: var(--gray-600);
+  /* Card class */
+  --font-color-card-class: var(--dark-blue);
+  /* Gretting */
+  --font-color-gretting: var(--very-dark-blue);
+  /* Background tag */
+  --bg-tag: var(var(--light-grayish));
+  /* Icons */
+  --title-icon-font-color: var(--very-dark-blue);
+  --icon-border-color: var(--dark-cyan);
+  --bg-icon-color: var(--gray-100);
+  /* Card Popup */
+  --h4-font-color: var(--very-dark-desaturated-blue);
+  --h4-span-bg: var(--lime-green);
+  /* Webkit-scrollbar-thumb */
+  --webkit-scrollbar-thumb-bg: var(--light-grayish);
+  --webkit-scrollbar-track: var(var(--light-gray-white));
+  /* fonts Global Size*/
+
+  /* PX */
+
+  /* --h1-desktop: 48px;
+  --h2-desktop: 40px;
+  --h3-desktop: 32px;
+  --h4-desktop: 24px;
+  --h5-desktop: 20px;
+  --h6-desktop: 16px;
+
+  --h1-mobile: 32px;
+  --h2-mobile: 24px;
+  --h3-mobile: 20px;
+  --h4-mobile: 18px;
+  --h5-mobile: 16px;
+  --h6-mobile: 14px;
+
+  --paragraph-default: 16px;
+  --paragraph-large: 20px;
+  --paragraph-small: 14px;
+
+  --link-default: 16px;
+  --link-large: 20px;
+  --link-small: 14px;
+
+  --quotation-default: 20px;
+  --quotation-large: 24px; */
+
+  /* REM */
+
+  --h1-desktop: 3rem;
+  --h2-desktop: 2.5rem;
+  --h3-desktop: 2rem;
+  --h3-gretting-desktop: 1.5rem;
+  --h4-desktop: 1.5rem;
+  --h5-desktop: 1.25rem;
+  --h6-desktop: 1rem;
+
+  --h1-mobile: 2rem;
+  --h2-mobile: 1.5rem;
+  --h3-mobile: 1.25rem;
+  --h4-mobile: 1.125rem;
+  --h5-mobile: 1rem;
+  --h6-mobile: 0.875rem;
+
+  --paragraph-default: 1rem;
+  --paragraph-large: 1.25px;
+  --paragraph-small: 0.875rem;
+
+  --link-default: 1rem;
+  --link-large: 1.25px;
+  --link-small: 0.875rem;
+
+  --quotation-default: 1.25rem;
+  --quotation-large: 1.5rem;
+
+  /**
+  ** ******** Sidebar ********
+  */
+
+  /* Global Sidebar */
+  --sidebar-border-color: var(--gray-200);
+
+  /* Header Sidebar */
+  --sidebar-header-height: 162px;
+  --padding-sidebar: 0px 10px 10px 24px;
+  --sidebarOpen-padding-header: 0px 10px 10px 24px;
+  --sidebarCompressed-padding-header: 0px 10px 10px 24px;
+
+  /* Main Sidebar */
+  --sidebarOpen-width: 312px;
+  --sidebarCompressed-width: 92px;
+  --sidebarOpen-padding: 32px 8px 16px 24px;
+  --sidebarCompressend-padding: 10px 26px;
+  --sidebar-main-height: calc(var(--sidebar-header-height) + var(--sidebar-footer-height));
+
+  /* Footer Sidebar */
+
+  --sidebar-footer-height: 219px;
+  --sidebar-footer-padding: 10px 20px;
+
+  /*** ******** End Sidebar ********
+
+
+  /**
+  ** ******** Master Layout ********
+  */
+
+  /* Header */
+  --header-border-color: var(--gray-200);
+  --height-header: 72px;
+  --marginSize: 32px;
+  --paddingXl: 0px 32px;
+  --paddingMd: 0px 16px;
+  --margin-header: 0px 0px 32px 0px;
+
+  /* Dashboard */
+  /*Paddin derecho igual izquierdo menos with scrollBar  */
+  --paddingDashboardXl: 0px 24px 32px 32px;
+  --paddingDashboardSm: 0px 12px 80px;
+
+  /* ButtonNotification */
+  --buttonNotification-border-radius: 6px;
+  /* Breadcrumb */
+  --height-breadcrumb: 26px;
+  --margin-breadcrumb: 0px 0px 24px 0px;
+
+  /* Name of components */
+  --nameVar-style: #000;
+
+  /**
+  ** ******** End Master Layout ********
+  */
+
+  /* Margin Section */
+  --margin-section: 0px 0px 24px 0px;
+
+  /* Component Card*/
+  --borderRadius-card-default: 12px;
+  --paddingCard: 24px;
+  --padding-card-default: var(--paddingCard) var(--paddingCard) var(--paddingCard) var(--paddingCard);
+  --card-boxShadow-default: 0px 2px 7px rgba(0, 0, 0, 0.1);
+  --borderCardColor: 1px solid #e1eef8;
+
+  /* Component TitleIcon */
+  --titleIcon-margin-default: 0px 0px 16px 0px;
+
+  /* Component Tag */
+  --tag-borderRadius-default: 16px;
+  --tag-margin-default: 0px;
+
+  /* Setting the default values for the ButtonIcon Global component. */
+  --buttonIcon-iconSize-global: 20px;
+  --buttonIcon-iconColor-global: var(--gray-600);
+  --buttonIcon-borderRadius-global: 6px;
+  --buttonIcon-borderRadius-round-global: 50%;
+  --buttonIcon-padding-global: 12px;
+  --buttonIcon-hover-global: var(--gray-200);
+  --buttonIcon-buttonBackground-global: var(--gray-100);
+
+  /* Setting the default values for the buttonIcon-basic component. */
+  --buttonIcon-basic-buttonBackground-default: var(--buttonIcon-buttonBackground-global);
+  --buttonIcon-basic-hover-default: var(--buttonIcon-hover-global);
+  --buttonIcon-basic-iconSize-default: var(--buttonIcon-iconSize-global);
+  --buttonIcon-basic-iconColor-default: var(--buttonIcon-iconColor-global);
+  --buttonIcon-basic-borderRadius-default: var(--buttonIcon-borderRadius-global);
+  --buttonIcon-basic-padding-default: var(--buttonIcon-padding-global);
+
+  /* Setting the default values for the buttonIcon-badge component. */
+  --buttonIcon-badge-buttonBackground-default: var(--buttonIcon-buttonBackground-global);
+  --buttonIcon-badge-hover-default: var(--buttonIcon-hover-global);
+  --buttonIcon-badge-iconSize-default: 24px;
+  --buttonIcon-badge-iconColor-default: var(--buttonIcon-iconColor-global);
+  --buttonIcon-badge-borderRadius-default: var(--buttonIcon-borderRadius-global);
+  --buttonIcon-badge-padding-default: var(--buttonIcon-padding-global);
+  --buttonIcon-badge-backgroundBadge-default: var(--red);
+  --buttonIcon-badge-fontColorBadge-default: var(--white);
+
+  /* Setting the default values for the buttonIcon-Avatar component. */
+  --buttonIcon-avatar-buttonBackground-default: var(--buttonIcon-buttonBackground-global);
+  --buttonIcon-avatar-hover-default: var(--buttonIcon-hover-global);
+  --buttonIcon-avatar-iconSize-default: var(--buttonIcon-iconSize-global);
+  --buttonIcon-avatar-iconColor-default: var(--buttonIcon-iconColor-global);
+  --buttonIcon-avatar-borderRadius-default: var(--buttonIcon-borderRadius-round-global);
+  --buttonIcon-avatar-padding-default: var(--buttonIcon-padding-global);
+
+  /* Setting the default values for the buttonIcon-Label component. */
+  --buttonIcon-label-buttonBackground-default: var(--buttonIcon-buttonBackground-global);
+  --buttonIcon-label-buttonBackground-hover-default: #e4e8fc;
+  --buttonIcon-label-hover-default: var(--buttonIcon-hover-global);
+  --buttonIcon-label-iconSize-default: var(--buttonIcon-iconSize-global);
+  --buttonIcon-label-iconColor-default: var(--buttonIcon-iconColor-global);
+  --buttonIcon-label-iconColor-hover-default: #0000ff;
+  --buttonIcon-label-labelColor-default: #344054;
+  --buttonIcon-label-labelColor-hover-default: #0000ff;
+  --buttonIcon-label-marginLeftLabel-default: 12px;
+  --buttonIcon-label-borderRadius-default: var(--buttonIcon-borderRadius-global);
+  --buttonIcon-label-padding-default: var(--buttonIcon-padding-global);
+  --buttonIcon-label-marginLabelTop-default: 2px;
+  --buttonIcon-label-marginLabelBottom-default: 2px;
+  --buttonIcon-label-tooltipBgColor-default: var(--gray-600);
+
+  /* Setting the default values for the buttonIcon-Accordion component. */
+  --buttonIcon-accordion-buttonBackground-default: transparent;
+  --buttonIcon-accordion-buttonBackground-hover-default: #e4e8fc;
+  --buttonIcon-accordion-hover-default: var(--buttonIcon-hover-global);
+  --buttonIcon-accordion-iconSize-default: var(--buttonIcon-iconSize-global);
+  --buttonIcon-accordion-iconColor-default: var(--gray-500);
+  --buttonIcon-accordion-iconColor-hover-default: #0000ff;
+  --buttonIcon-accordion-labelColor-default: #344054;
+  --buttonIcon-accordion-labelColor-hover-default: #0000ff;
+  --buttonIcon-accordion-marginLeftLabel-default: 12px;
+  --buttonIcon-accordion-borderRadius-default: var(--buttonIcon-borderRadius-global);
+  --buttonIcon-accordion-padding-default: var(--buttonIcon-padding-global);
+  --buttonIcon-accordion-marginLabelTop-default: 2px;
+  --buttonIcon-accordion-marginLabelBottom-default: 2px;
+  --buttonIcon-accordion-tooltipBgColor-default: var(--gray-600);
+  --buttonIcon-accordion-tooltipFontColor-default: var(--white);
+  --buttonIcon-accordion-buttonList-background-focus: #f4f5fd;
+  --buttonIcon-accordion-buttomList-sizeFocus: var(--sizeFocus);
+  --buttonIcon-accordion-minHeight-default: 40px;
+
+  /* Setting the default values for the buttonIcon-badge component. */
+  --buttonIcon-links-buttonBackground-default: var(--background);
+  --buttonIcon-links-hover-default: var(--gray-200);
+  --buttonIcon-links-iconSize-default: var(--buttonIcon-iconSize-global);
+  --buttonIcon-links-iconColor-default: var(--buttonIcon-iconColor-global);
+  --buttonIcon-links-borderRadius-default: var(--buttonIcon-borderRadius-global);
+  --buttonIcon-links-padding-default: var(--buttonIcon-padding-global);
+  --buttonIcon-links-backgroundlinks-default: var(--red);
+  --buttonIcon-links-fontColorlinks-default: var(--white);
+
+  /* Setting the default values for the LineSeparator component. */
+  --lineSeparator-color: #f2f4f5;
+
+  /* Setting the default values for Skeleton component. */
+  --skeleton-background-color: #d9d9d9;
+  --skeleton-effect-color: #ffffff;
+
+  /* Setting the default values for the buttonIcon-badge component. */
+  --buttonIcon-links-buttonBackground-default: var(--background);
+  --buttonIcon-links-hover-default: var(--buttonIcon-hover-global);
+  --buttonIcon-links-iconSize-default: var(--buttonIcon-iconSize-global);
+  --buttonIcon-links-iconColor-default: var(--buttonIcon-iconColor-global);
+  --buttonIcon-links-borderRadius-default: var(--buttonIcon-borderRadius-global);
+  --buttonIcon-links-padding-default: var(--buttonIcon-padding-global);
+  --buttonIcon-links-backgroundlinks-default: var(--red);
+  --buttonIcon-links-fontColorlinks-default: var(--white);
+
+  /* Setting the default values for the Classes component. */
+  /* Header Classes */
+  --borderRadiusHeader: var(--borderRadiusClasses);
+  --hightHeaderClassesSm: 48px;
+  --hightHeaderClassesMd: 48px;
+  --hightHeaderClassesXl: 44px;
+  --bgHeaderHoursSm: var(--white);
+  --bgHeaderHoursMd: var(--white);
+  --bgHeaderHoursXl: var(--gray-100);
+  --bgHeaderDaySm: var(--white);
+  --bgHeaderDayMd: var(--white);
+  --bgHeaderDayXl: var(--gray-100);
+  --borderColorHeader: var(--gray-200);
+
+  /* Body Classes */
+  --borderColorBody: var(--gray-200);
+  --bgBodyCell: transparent;
+
+  /* General Classes */
+  --widthHoursColumnsSm: 62px;
+  --widthHoursColumnsMd: 62px;
+  --widthHoursColumnsXl: 96px;
+  --borderRadiusClasses: 12px;
+  --borderRadiusFooter: var(--borderRadiusClasses);
+
+  /* Container Classes */
+  --backgroundClassesColorFirstClass: rgba(122, 143, 255, 0.12);
+  --textClassesColorFirstClass: #7a8fff;
+  --backgroundClassesColorSecondClass: rgba(47, 137, 137, 0.12);
+  --textClassesColorSecondClass: #2f8989;
+  --backgroundClassesColorThirdClass: rgba(204, 74, 53, 0.12);
+  --textClassesColorThirdClass: #cc4a35;
+  --backgroundClassesColorFourthClass: rgba(0, 43, 65, 0.12);
+  --textClassesColorFourthClass: #002b41;
+  --backgroundClassesColorFifthClass: rgba(131, 97, 0, 0.12);
+  --textClassesColorFifthClass: #836100;
+  --backgroundClassesColorSixthClass: rgba(232, 125, 48, 0.12);
+  --textClassesColorSixthClass: #e87d30;
+  --backgroundClassesColorSeventhClass: rgba(147, 60, 149, 0.12);
+  --textClassesColorSeventhClass: #933c95;
+  --backgroundClassesColorEighthClass: rgba(54, 163, 65, 0.12);
+  --textClassesColorEighthClass: #36a341;
+  --backgroundClassesColorNinthClass: rgba(30, 0, 211, 0.12);
+  --textClassesColorNinthClass: #1e00d3;
+  --backgroundClassesColorTenthClass: rgba(104, 104, 104, 0.12);
+  --textClassesColorTenthClass: #686868;
+}
+
+html[data-theme='light'] {
+  /* USS UI KIT */
+  /* Background / Light Mode */
+  --background: #ffffff;
+  --background-2: #f6f7f7;
+  --gray-100: #f2f4f7;
+}
+
+html[data-theme='dark'] {
+  /* USS UI KIT */
+  /* Background / Dark Mode */
+  --background: #0b141f;
+  --background-2: #19222e;
+  --gray-100: #f2f4f7;
+}
+
+/* @media (prefers-color-scheme: dark) {
+
+  body,
+  aside {
+    color: #eee;
+    background: #0B141F;
+  }
+
+  body a {
+    color: #809fff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: #eee;
+    background: #121212;
+  }
+
+  body a {
+    color: #809fff;
+  }
+} */

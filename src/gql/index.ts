@@ -1,0 +1,6 @@
+export { default as gqlUser } from './User'
+export { default as gqlStudent } from './Student'
+export { default as gqlHorarioDia } from './HorarioDia'
+export { default as gqlQualifications } from './Qualifications'
+export { default as gqlMisAranceles } from './MisAranceles'
+export { default as gqlClassWeekCalendar } from './ClassWeekCalendar'

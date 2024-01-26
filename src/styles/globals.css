@@ -1,0 +1,102 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--background-body);
+  height: 100vh;
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+  html {
+    font-size: 85% !important;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus,
+a:focus-visible {
+  outline: 2px solid var(--focus);
+  background: var(--buttonIcon-accordion-buttonList-background-focus);
+  border-radius: var(--buttonIcon-borderRadius-global);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border-width: 0px;
+  border-style: outset;
+  cursor: pointer;
+}
+
+a:focus {
+  outline: var(--focus) auto 1px;
+}
+/* A pseudo-class that applies to an element when it is focused and the user has navigated to
+        it using the keyboard. */
+a:focus-visible {
+  outline: var(--focus) auto 1px;
+}
+
+/*
+ * Init Scrollbar
+*/
+
+/* Width Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track Scrollbar */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px var(--background);
+  border-radius: 10px;
+  margin: 0px 4px 0px 0px;
+  background: transparent;
+}
+
+/* Handle Scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #d2dee9;
+  border-radius: 16px;
+  margin: 0px 4px 0px 0px;
+}
+
+/* Handle on hover Scrollbar*/
+::-webkit-scrollbar-thumb:hover {
+  background: #d2dee9;
+}
+
+@media (max-width: 1279px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/*
+ * End Scrollbar
+*/
+
+/*
+* No rotate on Mobile
+*/
+/* 
+@media screen and (orientation: landscape) and (max-height: 743px) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+} 
+*/

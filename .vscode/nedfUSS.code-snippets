@@ -1,0 +1,62 @@
+{
+	// Place your GLOBAL snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+  "Export Default function": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "nedf-",
+		"body": ["interface ${1:NameOfComponent}Props {"
+						"	 some?: number"
+						"}"
+						""
+						"export default function ${1:NameOfComponent}$0(props: ${1:NameOfComponent}Props) {"
+						"	 return ("
+						"    <>"
+						"      <div className=\"container\"></div>"
+						""
+						"      <style jsx>{`"
+						"        /**"
+						"        ** This will change the style of the component when the screen is"
+						"        ** minor that 744px."
+            "        ** Sm- Mobile Version"
+            "        */"
+            "        .container {"
+            "        }"
+            ""
+            "        /**"
+            "        ** A media query that will change the style of the component when the screen is"
+						"        ** greater that 744px and max 1279px."
+            "        ** Md- Tablet - Version"
+            "        */"
+            "        @media (min-width: 744px) and (max-width: 1279px) {"
+            "        }"
+            ""
+            "        /**"
+            "        ** A media query that will change the style of the component when the screen is"
+						"        ** greater than 1280px."
+            "        ** Xl- Desktop - Version"
+            "        */"
+            "        @media (min-width: 1280px) {"
+            "        }"
+            ""
+            "      `}</style>"
+            "    </>"
+            "  )"
+            "}"
+					],
+		"descripcion": "Esto es un Custom Snippedt para NEXTJS USS Project. @caray"
+	}
+}

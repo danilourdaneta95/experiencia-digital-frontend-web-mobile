@@ -1,0 +1,96 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: experiencia-digital-front-deploy
+  namespace: uss-exp-digital-staging
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: experiencia-digital-front
+  template:
+    metadata:
+      labels:
+        app: experiencia-digital-front
+    spec:
+      containers:
+        - name: front-staging
+          image: localhost:32000/uss/experiencia-digital/frontend-staging:latest
+          env:
+            - name: BASE_PATH
+              valueFrom:
+                secretKeyRef:
+                  name: experiencia-digial-front-staging
+                  key: BASE_PATH
+            - name: NEXT_PUBLIC_BASE_PATH
+              valueFrom:
+                secretKeyRef:
+                  name: experiencia-digial-front-staging
+                  key: NEXT_PUBLIC_BASE_PATH
+            - name: NEXT_PUBLIC_API_URL
+              valueFrom:
+                secretKeyRef:
+                  name: experiencia-digial-front-staging
+                  key: NEXT_PUBLIC_API_URL
+            - name: NEXT_PUBLIC_TEST_ENVIRONMENT
+              valueFrom:
+                secretKeyRef:
+                  name: experiencia-digial-front-staging
+                  key: NEXT_PUBLIC_TEST_ENVIRONMENT
+            - name: NEXT_PUBLIC_AZURE_CLIENT_ID_USS
+              valueFrom:
+                secretKeyRef:
+                  name: experiencia-digial-front-staging
+                  key: NEXT_PUBLIC_AZURE_CLIENT_ID_USS
+            - name: NEXT_PUBLIC_AZURE_TENANT_ID_USS
+              valueFrom:
+                secretKeyRef:
+                  name: experiencia-digial-front-staging
+                  key: NEXT_PUBLIC_AZURE_TENANT_ID_USS
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "120m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+      imagePullSecrets:
+        - name: acr-secret
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: experiencia-digital-front-svc
+  namespace: uss-exp-digital-staging
+  labels:
+    app: experiencia-digital-front
+spec:
+  selector:
+    app: experiencia-digital-front
+  type: LoadBalancer
+  ports:
+    - name: http
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: experiencia-digital-front-ingress
+  namespace: uss-exp-digital-staging
+spec:
+  rules:
+    - host: mi.uss.cl
+      http:
+        paths:
+          - pathType: Prefix
+            path: /
+            backend:
+              service:
+                name: experiencia-digital-front-svc
+                port:
+                  number: 3000

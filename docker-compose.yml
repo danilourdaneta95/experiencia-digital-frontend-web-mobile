@@ -1,0 +1,128 @@
+version: "3.7"
+
+services:
+
+  elasticsearch:
+    image: elasticsearch:7.11.1
+    container_name: elasticsearch
+    environment:
+      - node.name=es01
+      - cluster.name=es-docker-cluster
+      - discovery.type=single-node
+    volumes:
+      - ./docker-config/elk/elasticsearch_data/:/usr/share/elasticsearch/data
+    mem_limit: "1g"
+    networks:
+      - mi-portal-network
+
+  redis-cache:
+    image: redis:alpine
+    container_name: redis-cache
+    expose:
+      - "6379"
+    logging:
+      driver: gelf
+      options:
+        gelf-address: "udp://127.0.0.1:12201"
+        tag: "mi-portal-dev-redis-local"
+    networks:
+      - mi-portal-network
+
+  logstash-agent:
+    image: logstash:7.11.1
+    container_name: logstash-agent
+    volumes:
+      - ./docker-config/elk/logstash-agent:/etc/logstash
+    command: logstash -f /etc/logstash/logstash.conf
+    depends_on:
+      - elasticsearch
+    ports:
+      - 12201:12201/udp
+    networks:
+      - mi-portal-network
+
+  logstash-central:
+    image: logstash:7.11.1
+    container_name: logstash-central
+    volumes:
+      - ./docker-config/elk/logstash-central:/etc/logstash
+    command: logstash -f /etc/logstash/logstash.conf
+    depends_on:
+      - elasticsearch
+    networks:
+      - mi-portal-network
+
+  kibana:
+    image: kibana:7.11.1
+    container_name: kibana
+    ports:
+      - 5601:5601
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+    networks:
+      - mi-portal-network
+
+  mongodb_local:
+    image: mongo:latest
+    container_name:  mongodb-local
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+    restart: unless-stopped
+    volumes:
+      - mongo-data:/data/db
+      - mongo-data:/data/configdb
+    depends_on:
+      - dynamodb
+      - dynamodb_seeder
+    logging:
+      driver: gelf
+      options:
+        gelf-address: "udp://127.0.0.1:12201"
+        tag: "mi-portal-dev-mongodb-local"
+    networks:
+      - mi-portal-network
+  
+  backend-app:
+    build:
+        context: ./docker-config/backend
+        dockerfile: Dockerfile
+        args:
+          SSH_KEY: ${SSH_KEY}
+          REPO_NAME: ${REPO_NAME}
+          BRANCH: ${BRANCH}
+          REPO_URL: ${REPO_URL}
+          BACKEND_ENV: ${BACKEND_ENV}
+    image: backend-app-image
+    container_name: backend-app
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mongodb_local
+      - dynamodb
+      - dynamodb_seeder
+      - logstash-agent
+      - logstash-central
+      - kibana
+    restart: unless-stopped
+    logging:
+      driver: gelf
+      options:
+        gelf-address: "udp://127.0.0.1:12201"
+        tag: "mi-portal-dev-backend-app"
+    networks:
+      - mi-portal-network
+
+volumes:
+  app_dynamodb:
+    driver: local
+  mongo-data:
+    driver: local
+
+networks:
+  mi-portal-network:
+    driver: bridge

@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:@next/next/recommended"
+  ],
+  "rules": {
+    "prefer-const": "error",
+    "@typescript-eslint/no-explicit-any": ["off"],
+    "@next/next/no-page-custom-font": "off"
+  }
+}

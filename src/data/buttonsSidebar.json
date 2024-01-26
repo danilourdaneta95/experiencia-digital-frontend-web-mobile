@@ -1,0 +1,471 @@
+{
+  "EstudiantesMain": [
+    {
+      "id": 1,
+      "variant": "label",
+      "labelContent": "Classroom",
+      "iconName": "ri-task-line",
+      "tabIndex": 1,
+      "target": "_blank",
+      "linkTo": "https://srv01.uss.cl/login/login_uss.php"
+    },
+    {
+      "id": 2,
+      "variant": "label",
+      "labelContent": "Mis Aranceles",
+      "iconName": "ri-wallet-3-line",
+      "tabIndex": 2,
+      "target": "",
+      "linkTo": "/misaranceles",
+      "disabled": false
+    },
+    {
+      "id": 3,
+      "variant": "label",
+      "labelContent": "Becas y financiamiento",
+      "iconName": "ri-newspaper-line",
+      "tabIndex": 3,
+      "target": "_blank",
+      "linkTo": "https://admision.uss.cl/becas-y-financiamiento/",
+      "disabled": false
+    },
+    {
+      "id": 4,
+      "variant": "label",
+      "labelContent": "Empleos USS",
+      "iconName": "ri-briefcase-2-line",
+      "tabIndex": 4,
+      "target": "_blank",
+      "linkTo": "https://portalempleo.uss.cl/"
+    },
+    {
+      "id": 5,
+      "variant": "label",
+      "labelContent": "Noticias",
+      "iconName": "ri-newspaper-line",
+      "tabIndex": 5,
+      "target": "_blank",
+      "linkTo": "https://www.uss.cl/noticias/",
+      "disabled": false
+    },
+    {
+      "id": 6,
+      "variant": "label",
+      "labelContent": "Agenda USS",
+      "iconName": "ri-calendar-event-line",
+      "tabIndex": 6,
+      "target": "_blank",
+      "linkTo": "https://www.uss.cl/actualidad-uss/agenda/",
+      "disabled": false
+    },
+    {
+      "id": 7,
+      "variant": "label",
+      "labelContent": "Campo Clínico",
+      "iconName": "ri-mental-health-line",
+      "tabIndex": 7,
+      "target": "_blank",
+      "linkTo": "https://www.uss.cl/facultades-y-carreras/ciencias-cuidado-salud/campos-clinicos-salud/",
+      "disabled": false,
+      "buttomContent": [
+        {
+          "id": 1,
+          "labelContent": "Vestuarios y formalidades",
+          "iconName": ""
+        },
+        {
+          "id": 2,
+          "labelContent": "Accidente de estudiantes",
+          "iconName": ""
+        },
+        {
+          "id": 3,
+          "labelContent": "Procedimientos",
+          "iconName": ""
+        },
+        {
+          "id": 4,
+          "labelContent": "Estipendio",
+          "iconName": ""
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "variant": "label",
+      "labelContent": "Vinculación con el medio",
+      "iconName": "ri-chat-smile-line",
+      "tabIndex": 8,
+      "target": "_blank",
+      "linkTo": "https://www.uss.cl/vinculacion-con-el-medio/acerca-de-vcm/",
+      "disabled": false
+    }
+  ],
+  "EgresadosMain": [
+    {
+      "id": 2,
+      "variant": "label",
+      "labelContent": "Noticias",
+      "iconName": "ri-newspaper-line",
+      "tabIndex": 2,
+      "linkTo": "https://www.uss.cl/noticias/",
+      "target": "_blank",
+      "disabled": false
+    },
+    {
+      "id": 3,
+      "variant": "label",
+      "labelContent": "Vinculación con el medio",
+      "iconName": "ri-chat-check-line",
+      "tabIndex": 3,
+      "linkTo": "https://www.uss.cl/vinculacion-con-el-medio/acerca-de-vcm/",
+      "target": "_blank",
+      "disabled": false
+    },
+
+    {
+      "id": 4,
+      "variant": "label",
+      "labelContent": "Biblioteca",
+      "iconName": "ri-building-4-line",
+      "tabIndex": 4,
+      "target": "_blank",
+      "linkTo": "https://biblioteca.uss.cl/"
+    }
+  ],
+  "AdvancePresencialMain": [
+    {
+      "id": 1,
+      "variant": "label",
+      "labelContent": "Classroom",
+      "iconName": "ri-task-line",
+      "tabIndex": 1,
+      "target": "_blank",
+      "linkTo": "https://srv01.uss.cl/login/login_uss.php"
+    },
+    {
+      "id": 2,
+      "variant": "label",
+      "labelContent": "Mis Aranceles",
+      "iconName": "ri-wallet-3-line",
+      "tabIndex": 2,
+      "target": "",
+      "linkTo": "/misaranceles",
+      "disabled": false
+    },
+    {
+      "id": 3,
+      "variant": "label",
+      "labelContent": "Becas y financiamiento",
+      "iconName": "ri-newspaper-line",
+      "tabIndex": 3,
+      "target": "_blank",
+      "linkTo": "https://admision.uss.cl/becas-y-financiamiento/",
+      "disabled": false
+    },
+    {
+      "id": 4,
+      "variant": "label",
+      "labelContent": "Empleos USS",
+      "iconName": "ri-briefcase-2-line",
+      "tabIndex": 4,
+      "target": "_blank",
+      "linkTo": "https://portalempleo.uss.cl/"
+    },
+    {
+      "id": 5,
+      "variant": "label",
+      "labelContent": "Noticias",
+      "iconName": "ri-newspaper-line",
+      "tabIndex": 5,
+      "target": "_blank",
+      "linkTo": "https://www.uss.cl/noticias/",
+      "disabled": false
+    },
+    {
+      "id": 6,
+      "variant": "label",
+      "labelContent": "Agenda USS",
+      "iconName": "ri-calendar-event-line",
+      "tabIndex": 6,
+      "target": "_blank",
+      "linkTo": "https://www.uss.cl/actualidad-uss/agenda/",
+      "disabled": false
+    },
+    {
+      "id": 7,
+      "variant": "label",
+      "labelContent": "Campo Clínico",
+      "iconName": "ri-mental-health-line",
+      "tabIndex": 7,
+      "target": "_blank",
+      "linkTo": "https://www.uss.cl/facultades-y-carreras/ciencias-cuidado-salud/campos-clinicos-salud/",
+      "disabled": false,
+      "buttomContent": [
+        {
+          "id": 1,
+          "labelContent": "Vestuarios y formalidades",
+          "iconName": ""
+        },
+        {
+          "id": 2,
+          "labelContent": "Accidente de estudiantes",
+          "iconName": ""
+        },
+        {
+          "id": 3,
+          "labelContent": "Procedimientos",
+          "iconName": ""
+        },
+        {
+          "id": 4,
+          "labelContent": "Estipendio",
+          "iconName": ""
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "variant": "label",
+      "labelContent": "Vinculación con el medio",
+      "iconName": "ri-chat-smile-line",
+      "tabIndex": 8,
+      "target": "_blank",
+      "linkTo": "https://www.uss.cl/vinculacion-con-el-medio/acerca-de-vcm/",
+      "disabled": false
+    }
+  ],
+  "AdvanceOnlineMain": [
+    {
+      "id": 1,
+      "variant": "label",
+      "labelContent": "Blackboard",
+      "iconName": "ri-task-line",
+      "tabIndex": 1,
+      "target": "_blank",
+      "linkTo": "https://uss.blackboard.com/"
+    },
+    {
+      "id": 2,
+      "variant": "label",
+      "labelContent": "Mis Aranceles",
+      "iconName": "ri-wallet-3-line",
+      "tabIndex": 2,
+      "target": "",
+      "linkTo": "/misaranceles",
+      "disabled": false
+    },
+    {
+      "id": 3,
+      "variant": "label",
+      "labelContent": "Becas y financiamiento",
+      "iconName": "ri-newspaper-line",
+      "tabIndex": 3,
+      "target": "_blank",
+      "linkTo": "https://admision.uss.cl/becas-y-financiamiento/",
+      "disabled": false
+    },
+    {
+      "id": 4,
+      "variant": "label",
+      "labelContent": "Empleos USS",
+      "iconName": "ri-briefcase-2-line",
+      "tabIndex": 4,
+      "target": "_blank",
+      "linkTo": "https://portalempleo.uss.cl/"
+    },
+    {
+      "id": 5,
+      "variant": "label",
+      "labelContent": "Noticias",
+      "iconName": "ri-newspaper-line",
+      "tabIndex": 5,
+      "target": "_blank",
+      "linkTo": "https://www.uss.cl/noticias/",
+      "disabled": false
+    },
+    {
+      "id": 6,
+      "variant": "label",
+      "labelContent": "Agenda USS",
+      "iconName": "ri-calendar-event-line",
+      "tabIndex": 6,
+      "target": "_blank",
+      "linkTo": "https://www.uss.cl/actualidad-uss/agenda/",
+      "disabled": false
+    },
+    {
+      "id": 7,
+      "variant": "label",
+      "labelContent": "Campo Clínico",
+      "iconName": "ri-mental-health-line",
+      "tabIndex": 7,
+      "target": "_blank",
+      "linkTo": "https://www.uss.cl/facultades-y-carreras/ciencias-cuidado-salud/campos-clinicos-salud/",
+      "disabled": false,
+      "buttomContent": [
+        {
+          "id": 1,
+          "labelContent": "Vestuarios y formalidades",
+          "iconName": ""
+        },
+        {
+          "id": 2,
+          "labelContent": "Accidente de estudiantes",
+          "iconName": ""
+        },
+        {
+          "id": 3,
+          "labelContent": "Procedimientos",
+          "iconName": ""
+        },
+        {
+          "id": 4,
+          "labelContent": "Estipendio",
+          "iconName": ""
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "variant": "label",
+      "labelContent": "Vinculación con el medio",
+      "iconName": "ri-chat-smile-line",
+      "tabIndex": 8,
+      "target": "_blank",
+      "linkTo": "https://www.uss.cl/vinculacion-con-el-medio/acerca-de-vcm/",
+      "disabled": false
+    }
+  ],
+  "PostgradoMain": [
+    {
+      "id": 1,
+      "variant": "label",
+      "labelContent": "Classroom",
+      "iconName": "ri-task-line",
+      "tabIndex": 1,
+      "target": "_blank",
+      "linkTo": "https://srv01.uss.cl/login/login_uss.php"
+    },
+    {
+      "id": 2,
+      "variant": "label",
+      "labelContent": "Mis Aranceles",
+      "iconName": "ri-wallet-3-line",
+      "tabIndex": 2,
+      "target": "",
+      "linkTo": "/misaranceles",
+      "disabled": false
+    },
+    {
+      "id": 3,
+      "variant": "label",
+      "labelContent": "Becas y financiamiento",
+      "iconName": "ri-newspaper-line",
+      "tabIndex": 3,
+      "target": "_blank",
+      "linkTo": "https://admision.uss.cl/becas-y-financiamiento/",
+      "disabled": false
+    },
+    {
+      "id": 4,
+      "variant": "label",
+      "labelContent": "Empleos USS",
+      "iconName": "ri-briefcase-2-line",
+      "tabIndex": 4,
+      "target": "_blank",
+      "linkTo": "https://portalempleo.uss.cl/"
+    },
+    {
+      "id": 5,
+      "variant": "label",
+      "labelContent": "Noticias",
+      "iconName": "ri-newspaper-line",
+      "tabIndex": 5,
+      "target": "_blank",
+      "linkTo": "https://www.uss.cl/noticias/",
+      "disabled": false
+    },
+    {
+      "id": 6,
+      "variant": "label",
+      "labelContent": "Agenda USS",
+      "iconName": "ri-calendar-event-line",
+      "tabIndex": 6,
+      "target": "_blank",
+      "linkTo": "https://www.uss.cl/actualidad-uss/agenda/",
+      "disabled": false
+    },
+    {
+      "id": 7,
+      "variant": "label",
+      "labelContent": "Campo Clínico",
+      "iconName": "ri-mental-health-line",
+      "tabIndex": 7,
+      "target": "_blank",
+      "linkTo": "https://www.uss.cl/facultades-y-carreras/ciencias-cuidado-salud/campos-clinicos-salud/",
+      "disabled": false,
+      "buttomContent": [
+        {
+          "id": 1,
+          "labelContent": "Vestuarios y formalidades",
+          "iconName": ""
+        },
+        {
+          "id": 2,
+          "labelContent": "Accidente de estudiantes",
+          "iconName": ""
+        },
+        {
+          "id": 3,
+          "labelContent": "Procedimientos",
+          "iconName": ""
+        },
+        {
+          "id": 4,
+          "labelContent": "Estipendio",
+          "iconName": ""
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "variant": "label",
+      "labelContent": "Vinculación con el medio",
+      "iconName": "ri-chat-smile-line",
+      "tabIndex": 8,
+      "target": "_blank",
+      "linkTo": "https://www.uss.cl/vinculacion-con-el-medio/acerca-de-vcm/",
+      "disabled": false
+    }
+  ],
+  "EstudiantesFooter": [
+    {
+      "id": 1,
+      "variant": "label",
+      "labelContent": "Danos tu Feedback",
+      "iconName": "ri-messenger-line",
+      "supportingText": "Deja aquí tus comentarios",
+      "href": "https://forms.gle/4QKjzWecF33KgGkp9 ",
+      "target": "_blank",
+      "onHover": true
+    },
+    {
+      "id": 2,
+      "variant": "label",
+      "labelContent": "Ayuda y soporte",
+      "iconName": "ri-phone-line",
+      "href": "tel:+566007713000",
+      "supportingText": "600 771 3000"
+    }
+  ],
+  "DefaultFooter": [
+    {
+      "id": 1,
+      "variant": "label",
+      "labelContent": "Ayuda y soporte",
+      "iconName": "ri-phone-line",
+      "supportingText": "600 771 3000"
+    }
+  ]
+}
